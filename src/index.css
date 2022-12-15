@@ -17,6 +17,15 @@ body {
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+.page2 {
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
 .subpage {
   width: 21cm;
   height: 6cm;
@@ -28,7 +37,16 @@ body {
   background-color: aqua;
   margin-top: -01%;
   margin-left: -0.1%;
-  background-image: url('/src/images/blueBG.jpg');
+  /* background-image: url('/src/images/bg1.jpg');
+  background-image: url('/src/images/bg2.jpeg');
+  background-image: url('/src/images/bg3.png');
+  background-image: url('/src/images/bg4.png');
+  background-image: url('/src/images/bg5.webp');
+  background-image: url('/src/images/bg6.png');
+  background-image: url('/src/images/bg7.png');
+  background-image: url('/src/images/bg8.jpeg');
+  background-image: url('/src/images/bg9.jpeg'); */
+  background-image: url('/src/images/bg10.jpeg');
 
 }
 #avatar{
@@ -297,7 +315,46 @@ margin-top: 1%;
   height: 200px;
   margin-top: 40px;
 }
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -41px;
+  border: 2px solid;
+  z-index: 2;
+}
+.timeline-card:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1;
+}
+.timeline-card-primary:before {
+  border-color: #4A89DC;
+}
+.timeline-card-primary:after {
+  background-color: #4A89DC;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
 @page {
+  size: A4;
+  margin: 0;
+}
+@page2 {
   size: A4;
   margin: 0;
 }
@@ -312,4 +369,198 @@ margin-top: 1%;
       background: initial;
       page-break-after: always;
   }
+}
+@media print {
+  .page2 {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      min-height: initial;
+      box-shadow: initial;
+      background: initial;
+      page-break-after: always;
+  }
+}
+.bgOption {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 15cm;
+  height: 16cm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.singleOption1 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption1.png');
+  background-size: cover;
+  transition:all 0.5s;
+  
+}
+.singleOption2 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption2.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption3 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption3.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption4 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption4.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption5 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption5.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption6 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption6.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption7 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption7.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption8 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption8.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption9 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption9.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption10 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption10.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption11 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption11.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption12 {
+  width: 4.5cm;
+  height: 3cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/src/images/backgroundOptions/bgOption12.png');
+  background-size: cover;
+  transition:all 0.5s;
+}
+.singleOption1:hover{
+  scale: 1.1;
+}
+.singleOption2:hover{
+  scale: 1.1;
+}
+.singleOption3:hover{
+  scale: 1.1;
+}
+.singleOption4:hover{
+  scale: 1.1;
+}
+.singleOption5:hover{
+  scale: 1.1;
+}
+.singleOption6:hover{
+  scale: 1.1;
+}
+.singleOption7:hover{
+  scale: 1.1;
+}
+.singleOption8:hover{
+  scale: 1.1;
+}
+.singleOption9:hover{
+  scale: 1.1;
+}
+.singleOption10:hover{
+  scale: 1.1;
+}
+.singleOption11:hover{
+  scale: 1.1;
+}
+.singleOption12:hover{
+  scale: 1.1;
 }
